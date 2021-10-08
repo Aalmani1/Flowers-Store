@@ -111,6 +111,9 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+button:hover {
+  background-color: #b6257c;
+}
 
 input[type="submit"]:hover {
   background-color: #b6257c;
