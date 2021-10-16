@@ -155,9 +155,10 @@ function totalCost(prodect) {
   if (cartCost != null) {
     cartCost = parseInt(cartCost);
     localStorage.setItem("totalCost", cartCost + prodect.price);
-    alert("Add to cart , Current Total " + cartCost);
+    alert("Add to cart , Current Total " + (cartCost + prodect.price));
   } else {
     localStorage.setItem("totalCost", prodect.price);
+    alert("Add to cart , Current Total " + prodect.price);
   }
 }
 
