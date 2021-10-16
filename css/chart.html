@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="store.js" async></script>
+    <title>Flower Store</title>
+</head>
+<body>
+
+    <div class="logo">
+        <div>
+        <img src="imgs/logo.png" alt="img" class="img-logo">
+        </div>
+        
+        <div class="logo-title">
+           <h1>FLOWERS STORE </h1>
+        </div>
+
+
+        <div class="cart">
+            <button id="chart"><a class="active" href="chart.html"  id="chart"><img src="imgs/cart.png" alt="img" class="img-cart" ></a></button>
+
+        </div>
+        
+    </div>
+
+    <div class="container"|>
+        <div class="navbar">
+            <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="flowers.html">Flowers</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            </nav>
+        </div>
+
+
+        <!-- <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section> -->
+
+    <div class="prodects-container">
+        <div class="product-header">
+            <h5 class="product-title">Product</h5>
+            <h5 class="price">Price</h5>
+            <h5 class="quantity">Quantity</h5>
+            <h5 class="total">Total</h5>
+        </div>
+
+        <div class="product">
+            
+        </div>
+
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <h4 class="cart-total-price">$0</h4>
+        </div>
+        <form>
+           <label><h4>Discount coupons: </h4></label> 
+           <input type="text" id="code" name="code" placeholder="Enter Discount coupons.."><br>
+        </form>
+ 
+            <h4>Collection or Delivery: </h4>
+            <form>
+                  <input type="radio" id="collection" name="collection" value="collection">
+                  <label for="collection">Collection</label><br>
+                  <input type="radio" id="delivery" name="delivery" value="delivery">
+                  <label for="delivery">Delivery</label><br>            
+            </form> 
+
+  
+        <button class="btn btn-primary btn-purchase" onclick="Buy()" type="button">PURCHASE</button>
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
