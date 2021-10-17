@@ -390,10 +390,10 @@ h3 {
 
 .product {
   width: 45%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+
   /* border-bottom: 1px solid lightgray; */
 }
 
@@ -428,4 +428,8 @@ h3 {
 
 .product-total {
   margin-left: 20%;
+}
+
+#CartImg {
+  width: 250px;
 }

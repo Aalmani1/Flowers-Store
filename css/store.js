@@ -174,17 +174,27 @@ function displayCart() {
     Object.values(cartItems).map((item) => {
       prodectContainer.innerHTML += `
 
+<div>
+<img src="${item.img}" id="CartImg">
+<span >${item.title}</span>
+</div>
 
-   <div class="cart-item cart-column">
-   <img class="cart-item-image" src="${item.img}" width="100" height="100">
-   <span class="cart-item-title">${item.title}</span>
+
+
+<div>
+<input  type="number" value="1">
+<span> SA${item.inCart * item.price},00 </span>
 </div>
-<span class="cart-price cart-column">${item.inCart}</span>
-<div class="cart-quantity cart-column">
-   <input class="cart-quantity-input" type="number" value="1">
-   <span> SA${item.inCart * item.price},00 </span>
-   <button class="btn btn-danger" type="button">REMOVE</button>
+
+<div>
+<span >${item.inCart}</span>
 </div>
+
+<div>
+<button class="btn btn-danger" type="button">REMOVE</button>
+</div>
+
+
 
 
   `;
